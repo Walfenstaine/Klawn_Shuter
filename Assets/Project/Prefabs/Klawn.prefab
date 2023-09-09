@@ -10,19 +10,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.400958
+      value: -3.4004905
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4728799
+      value: 0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -35.29741
+      value: -29.410196
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -206,7 +206,6 @@ MonoBehaviour:
   onDestroy: {fileID: 7817819021906885773}
   loot:
   - {fileID: 2997409033050282953, guid: 1f2398255b83c5b4f94cc789f4c0a6a4, type: 3}
-  speed: 7
   stopDist: 3
   helse: 10
   anim: {fileID: 6441061489201705071}
@@ -231,7 +230,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 2.0563862, z: 1}
+  m_Size: {x: 1.3, y: 2.0563862, z: 1.3}
   m_Center: {x: 0, y: 0.28076905, z: 0.000013474273}
 --- !u!1 &7817819021906885773 stripped
 GameObject:

@@ -9,7 +9,6 @@ public class EnEmiter : MonoBehaviour
     public float interval;
     public ParticleSystem pS;
     private float timer;
-    private bool active = true;
     private void Start()
     {
         timer = Time.time;
@@ -21,28 +20,11 @@ public class EnEmiter : MonoBehaviour
         timer = Time.time;
         pS.Play();
     }
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            active = false;
-        }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.tag == "Player")
-        {
-            active = true;
-        }
-    }
     private void Update()
     {
-        if (active)
+        if (Time.time > (timer + Random.Range(interval, interval * 2)))
         {
-            if (Time.time > (timer + Random.Range(interval, interval * 2)))
-            {
-                Emit();
-            }
+            Emit();
         }
     }
 }

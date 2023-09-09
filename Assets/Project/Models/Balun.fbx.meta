@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9aeb0ac3e2c966246b4fdb3f2bb525b9
+guid: 341641678c972df43b7e6d4a657dd8a4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Wals
-    second: {fileID: 2100000, guid: fe52bd50637524c4389681f36f972352, type: 2}
+      name: Balun
+    second: {fileID: 2100000, guid: 5ecc386a8a617a247a73fb88a7849445, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 3
+    globalScale: 0.6
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -75,7 +75,7 @@ ModelImporter:
     useFileScale: 1
     strictVertexDataChecks: 0
   tangentSpace:
-    normalSmoothAngle: 0
+    normalSmoothAngle: 30
     normalImportMode: 1
     tangentImportMode: 3
     normalCalculationMode: 4
@@ -95,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.03
+    globalScale: 0.006
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

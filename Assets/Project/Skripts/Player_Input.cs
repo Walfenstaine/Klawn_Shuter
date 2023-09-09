@@ -9,13 +9,16 @@ public class Player_Input : MonoBehaviour {
 	void Start () {
         muwer = Muwer.rid;
 	}
-	
+    public void Shut()
+    {
+        Gun.rid.Shut();
+    }
 
-	void Update () {
+    void Update () {
         muwer.rut = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Gun.rid.Shut();
+            Shut();
         }
         if (Input.GetKeyDown(KeyCode.Escape)|| Input.GetKeyDown(KeyCode.Tab))
         {

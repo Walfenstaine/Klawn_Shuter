@@ -5,6 +5,6 @@ public class Data: ScriptableObject
 {
     public int record;
     public int bulets;
-
+    public float sens;
     public bool soundOn;
 }

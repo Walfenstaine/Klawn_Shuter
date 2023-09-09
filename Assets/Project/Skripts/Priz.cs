@@ -5,36 +5,47 @@ using UnityEngine.UI;
 
 public class Priz : MonoBehaviour
 {
-    public Data data;
-    public Text text;
-    private float timer;
-    private float speed;
-
-    private void OnEnable()
+    public ParticleSystem ps;
+    public Reward rew;
+    public float speed;
+    public bool detected;
+    public GameObject balun, priz;
+    private Rigidbody rb;
+    private Vector3 startPose;
+    private void Start()
     {
-        timer = 60;
-        speed = 1;
+        rb = GetComponent<Rigidbody>();
+        startPose = transform.position;
+    }
+    public void Detect()
+    {
+        rb.drag = 0;
+        detected = false;
+    }
+    void Reload()
+    {
+        rb.drag = 10;
+        transform.position = startPose;
+        detected = true;
     }
 
-    public void AdPatroni()
+    private void OnTriggerEnter(Collider other)
     {
-        data.bulets += (int)timer;
-        SaveAndLoad.Instance.Save();
+        if (!detected)
+        {
+            Instantiate(priz, transform.position, Quaternion.identity);
+            Interface.rid.Menu();
+            rew.ShowReward();
+            Reload();
+        }
+        else
+        {
+            Reload();
+            ps.Play();
+        }
     }
-
-
     void Update()
     {
-
-        if (timer <= 10)
-        {
-            speed = -1;
-        }
-        if (timer >= 60)
-        {
-            speed = 1;
-        }
-        timer -= speed * Time.unscaledDeltaTime;
-        text.text = "+ " + (int)timer;
+        balun.SetActive(detected);
     }
 }

@@ -54,6 +54,10 @@ public class Gun : MonoBehaviour
                 {
                     hit.collider.GetComponent<EnemiAI>().Damage();
                 }
+                if (hit.collider.tag == "Enemi")
+                {
+                    hit.collider.transform.parent.GetComponent<Priz>().Detect();
+                }
             }
         }
         else

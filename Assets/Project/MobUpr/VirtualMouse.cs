@@ -4,49 +4,35 @@ using UnityEngine;
 
 public class VirtualMouse : MonoBehaviour
 {
+    public bool onTouch;
     public float spector;
-    public Muwer muwer;
-    public Touch touch;
     private float tim;
-    private Vector2 pos;
-    void Start()
+    public void Ondrag()
     {
-        spector = Screen.height / 2;
-        muwer = Muwer.rid;
-    }
-    void Ondrag()
-    {
-        if (tim < 0.1f)
-        {
-            tim += Time.deltaTime;
-        }
-        else {
-            tim = 0;
-            pos = touch.position;
-        }
-        if (touch.phase == TouchPhase.Ended)
-        {
-            OffDrag();
-        }
-        muwer.rut = touch.position - pos;
+        onTouch = true;
     }
     public void OffDrag()
     {
-        muwer.rut = Vector2.zero;
+        if (Time.time - tim < spector)
+        {
+            Shut();
+        }
+        onTouch = false;
+    }
+    public void Shut()
+    {
+        Gun.rid.Shut();
     }
     void Update()
     {
-        if (touch.phase == TouchPhase.Began)
+        if (onTouch)
         {
-            pos = touch.position;
+            Muwer.rid.rut = new Vector2(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         }
-        for (int i = 0; i < Input.touchCount; i++)
+        else
         {
-            if (Vector3.Distance(Input.GetTouch(i).position, transform.position) < spector)
-            {
-                touch = Input.GetTouch(i); 
-                Ondrag();
-            }
+            Muwer.rid.rut = Vector2.zero;
+            tim = Time.time;
         }
     }
 }

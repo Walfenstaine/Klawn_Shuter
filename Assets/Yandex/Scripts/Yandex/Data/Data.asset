@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   record: 0
-  bulets: 30
+  bulets: 99945
+  sens: 0.061403535
   soundOn: 1

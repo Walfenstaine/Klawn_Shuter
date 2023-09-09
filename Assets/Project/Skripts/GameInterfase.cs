@@ -15,7 +15,6 @@ public class GameInterfase : MonoBehaviour
     public static GameInterfase rid { get; set; }
     void Awake()
     {
-        killers = 0;
         killers = data.record;
         if (rid == null)
         {
@@ -53,7 +52,7 @@ public class GameInterfase : MonoBehaviour
     {
         hPbar.fillAmount = Gun.rid.helse / 10;
         bullets.text = "" + data.bulets;
-        record.text = "" + (data.record);
+        record.text = "" + data.record;
         killed.text = "" + killers;
     }
 }

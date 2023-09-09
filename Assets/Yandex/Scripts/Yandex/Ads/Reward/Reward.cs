@@ -57,8 +57,7 @@ public class Reward : MonoBehaviour
             if (isRewarded)
             {
                 isRewarded = false;
-                data.bulets += 10;
-                //OnReward.Invoke();
+                OnReward.Invoke();
             }
         }
     }

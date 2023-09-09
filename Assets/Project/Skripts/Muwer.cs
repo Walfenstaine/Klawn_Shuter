@@ -28,16 +28,17 @@ public class Muwer : MonoBehaviour {
 	}
 
 	void Update() {
-        if (cam != null)
+        if (rut.magnitude > 0.1f)
         {
-            if (Time.timeScale > 0)
-            {
-                rotationY += rut.y * sensitivity;
-                rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
-                rotationX += rut.x * sensitivity;
-                rotationX = Mathf.Clamp(rotationX, minimumX, maximumX);
-                cam.transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
-            }
+            rotationY += rut.y * sensitivity;
+            rotationY = Mathf.Clamp(rotationY, minimumY, maximumY);
+            rotationX += rut.x * sensitivity;
+            rotationX = Mathf.Clamp(rotationX, minimumX, maximumX);
+            cam.transform.localEulerAngles = new Vector3(-rotationY, rotationX, 0);
+        }
+        else
+        {
+            return;
         }
     }
 }

@@ -68,7 +68,7 @@ public class EnemiAI : MonoBehaviour {
 
     void Update () {
         anim.SetFloat ("Speed", agent.velocity.magnitude/4);
-        agent.speed = 1.5f + Muwer.rid.rut.magnitude*data.record;
+        agent.speed = 1.5f + 0.01f*data.record;
         if (!damage)
         {
             if (player != null)
