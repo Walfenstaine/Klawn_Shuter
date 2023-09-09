@@ -6,6 +6,8 @@ using InstantGamesBridge;
 public class Loot : MonoBehaviour
 {
     [SerializeField] private Language language;
+    public enum Tipe { coin, bulet };
+    public Tipe tip;
     public AudioClip clip;
     public Data data;
     public Transform mekh;
@@ -23,7 +25,15 @@ public class Loot : MonoBehaviour
             {
                 Subtitres.regit.subtitres = language.en + " + " + mas; ;
             }
-            data.bulets += mas;
+            if (tip == Tipe.coin)
+            {
+                data.coins += mas;
+            }
+            if (tip == Tipe.bulet)
+            {
+                data.bulets += mas;
+            }
+            
             Destroy(gameObject);
         }
     }

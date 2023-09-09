@@ -14,15 +14,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.4004905
+      value: -3.0251546
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000023841858
+      value: -0.00000011920929
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -29.410196
+      value: -29.363754
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab57e6e3398393f4d802686a4154542b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -206,6 +206,7 @@ MonoBehaviour:
   onDestroy: {fileID: 7817819021906885773}
   loot:
   - {fileID: 2997409033050282953, guid: 1f2398255b83c5b4f94cc789f4c0a6a4, type: 3}
+  - {fileID: 2897731623228773649, guid: 62b1b14483d952e4d8a6cd16907dfd4a, type: 3}
   stopDist: 3
   helse: 10
   anim: {fileID: 6441061489201705071}

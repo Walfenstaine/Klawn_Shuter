@@ -9,7 +9,7 @@ public class GameInterfase : MonoBehaviour
     [SerializeField] private Language language;
     public Data data;
     public Image hPbar;
-    public Text bullets, record, killed;
+    public Text bullets, record, killed, kesh;
     public int killers;
     private float mHalse;
     public static GameInterfase rid { get; set; }
@@ -53,6 +53,7 @@ public class GameInterfase : MonoBehaviour
         hPbar.fillAmount = Gun.rid.helse / 10;
         bullets.text = "" + data.bulets;
         record.text = "" + data.record;
+        kesh.text = "" + data.coins;
         killed.text = "" + killers;
     }
 }

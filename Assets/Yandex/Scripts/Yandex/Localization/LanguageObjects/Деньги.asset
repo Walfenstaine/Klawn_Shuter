@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c2159556883534c42b8c9420514b57c5, type: 3}
-  m_Name: "\u041F\u043E\u0440\u0442\u0430\u043B"
+  m_Name: "\u0414\u0435\u043D\u044C\u0433\u0438"
   m_EditorClassIdentifier: 
-  <en>k__BackingField: More souls are needed
-  <ru>k__BackingField: "\u041D\u0443\u0436\u043D\u044B \u0435\u0449\u0435 \u0434\u0443\u0448\u0438"
+  <en>k__BackingField: Kesh
+  <ru>k__BackingField: "\u0414\u0435\u043D\u044C\u0433\u0438"
