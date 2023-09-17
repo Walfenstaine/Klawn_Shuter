@@ -24,9 +24,12 @@ public class Andlevel : MonoBehaviour
     }
     private void Update()
     {
-        text.gameObject.SetActive(reclame);
-        text.text = "" + (int)timer;
-        nex.SetActive(!reclame);
+        if (text != null)
+        {
+            text.gameObject.SetActive(reclame);
+            text.text = "" + (int)timer;
+            nex.SetActive(!reclame);
+        }
         if (reclame)
         {
             timer -= Time.unscaledDeltaTime;

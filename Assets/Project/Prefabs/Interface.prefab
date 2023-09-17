@@ -3188,8 +3188,8 @@ RectTransform:
   m_Father: {fileID: 8554592777932177937}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 50, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3942,7 +3942,7 @@ MonoBehaviour:
   sI: {fileID: 1870449707436712904}
   text: {fileID: 9108164535031688947}
   nex: {fileID: 4959959207674255618}
-  next: Scene1
+  next: Scene2
   reclame: 1
 --- !u!1 &3367943837031336832
 GameObject:
@@ -4338,7 +4338,7 @@ RectTransform:
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8446,7 +8446,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &9054650085611116890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8527,7 +8527,7 @@ MonoBehaviour:
   text: {fileID: 0}
   nex: {fileID: 0}
   next: 
-  reclame: 1
+  reclame: 0
 --- !u!1 &9169102772948798316
 GameObject:
   m_ObjectHideFlags: 0
