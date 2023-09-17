@@ -49,7 +49,7 @@ public class Subtitres : MonoBehaviour
         if (subtitres != "")
         {
             OnTitres();
-            timer += Time.deltaTime;
+            timer += Time.unscaledDeltaTime;
         }
     }
 }

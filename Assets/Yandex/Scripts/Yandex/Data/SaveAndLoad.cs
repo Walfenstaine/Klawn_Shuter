@@ -68,6 +68,10 @@ public class SaveAndLoad : MonoBehaviour
 
     void SetInitValue()
     {
+        myData.pl_Helse = 1;
+        myData.pl_Atak = 1;
+        myData.pl_Fortune = 1;
+        myData.coins = 100;
         myData.record = 0;
         myData.bulets = 20;
         myData.soundOn = true;

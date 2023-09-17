@@ -8,4 +8,8 @@ public class Data: ScriptableObject
     public int coins;
     public float sens;
     public bool soundOn;
+
+    public int pl_Helse;
+    public int pl_Atak;
+    public int pl_Fortune;
 }

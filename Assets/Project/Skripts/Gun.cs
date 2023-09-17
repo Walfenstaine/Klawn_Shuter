@@ -67,11 +67,11 @@ public class Gun : MonoBehaviour
     }
     public void Damage()
     {
-        if (helse > 1)
+        if (helse > data.record/data.pl_Helse)
         {
             SoundPlayer.regit.sorse.PlayOneShot(damage);
             anim.SetBool("Damage", true);
-            helse -= Random.Range(1,3);
+            helse -= (data.record+1) / data.pl_Helse;
         }
         else
         {

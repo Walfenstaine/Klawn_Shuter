@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2159556883534c42b8c9420514b57c5, type: 3}
   m_Name: Skills
   m_EditorClassIdentifier: 
-  <en>k__BackingField: Pump up talents
-  <ru>k__BackingField: "\u041F\u0440\u043E\u043A\u0430\u0447\u0430\u0442\u044C \u0442\u0430\u043B\u0430\u043D\u0442\u044B"
+  <en>k__BackingField: UPGRADES MENU
+  <ru>k__BackingField: "\u041C\u0415\u041D\u042E \u041F\u0420\u041E\u041A\u0410\u0427\u0415\u041A"

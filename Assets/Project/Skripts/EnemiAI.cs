@@ -16,7 +16,7 @@ public class EnemiAI : MonoBehaviour {
     private bool damage;
     private void Start()
     {
-        helse = Random.Range(1,3);
+        helse = Random.Range(data.record, data.record * 3);
         player = Muwer.rid.transform;
     }
     public void OnKick()
@@ -38,11 +38,11 @@ public class EnemiAI : MonoBehaviour {
     }
     public void Damage()
     {
-        if (helse > 1)
+        if (helse > data.pl_Atak)
         {
             SoundPlayer.regit.sorse.PlayOneShot(auch);
             anim.SetBool("Damage", true);
-            helse -= Random.Range(1, 3);
+            helse -= Random.Range(data.pl_Atak, data.pl_Atak * 3);
         }
         else
         {

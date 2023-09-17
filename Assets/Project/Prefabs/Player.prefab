@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 198489462716793282, guid: 811d5774627d8c74fbed02c681e00da9, type: 3}
       propertyPath: simulationSpeed
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 198489462716793282, guid: 811d5774627d8c74fbed02c681e00da9, type: 3}
       propertyPath: LightsModule.light

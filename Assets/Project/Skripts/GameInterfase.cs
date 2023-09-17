@@ -6,6 +6,7 @@ using InstantGamesBridge;
 
 public class GameInterfase : MonoBehaviour
 {
+    public bool lastlevel;
     [SerializeField] private Language language;
     public Data data;
     public Image hPbar;
@@ -32,7 +33,14 @@ public class GameInterfase : MonoBehaviour
         if (killers >= index)
         {
             data.record = killers;
-            SaveAndLoad.Instance.Save();
+            if (lastlevel)
+            {
+                SaveAndLoad.Instance.Save();
+            }
+            else
+            {
+                Interface.rid.AndLVL();
+            }
             if (Bridge.platform.language == "ru")
             {
                 Subtitres.regit.subtitres = language.ru;

@@ -13,6 +13,10 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   record: 0
-  bulets: 99945
+  bulets: 99944
+  coins: 0
   sens: 0.061403535
   soundOn: 1
+  pl_Helse: 9
+  pl_Atak: 6
+  pl_Fortune: 9

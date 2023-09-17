@@ -1,10 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using InstantGamesBridge;
 public class Autopricel : MonoBehaviour
 {
     public Transform enemi;
+
+    private void Start()
+    {
+        if (Bridge.device.type == InstantGamesBridge.Modules.Device.DeviceType.Desktop)
+        {
+            Destroy(this);
+        }
+    }
     void Update()
     {
         Vector2 rut = Muwer.rid.rut;
@@ -33,7 +41,7 @@ public class Autopricel : MonoBehaviour
             if (enemi != null)
             {
                 Vector3 nap = enemi.position - transform.position;
-                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(nap),Time.deltaTime);
+                transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.LookRotation(nap), 5.5f * Time.deltaTime);
 
             }
         }
