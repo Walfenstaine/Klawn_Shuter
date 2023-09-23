@@ -5,7 +5,6 @@ using InstantGamesBridge;
 public class Autopricel : MonoBehaviour
 {
     public Transform enemi;
-
     private void Start()
     {
         if (Bridge.device.type == InstantGamesBridge.Modules.Device.DeviceType.Desktop)
